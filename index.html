@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">  
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Geoff Balasi</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <script>
+	function myFunction() {
+		var age, oneDay, birth, today, year, subYear, decimal;
+		oneDay = 24*60*60*1000;
+		birth = new Date(1990,01,15);
+		today = new Date();
+		age = (Math.abs((birth.getTime() - today.getTime())/(oneDay)))/365;
+	    document.getElementById("year").innerHTML = Math.floor(age);
+	    decimal = age - Math.floor(age);
+	    decimal = decimal.toString();
+	    decimal = decimal.replace(/^0+/, '');
+	    decimal = decimal.substring(0,11);
+	    document.getElementById("subYear").innerHTML = decimal;
+	}
+	window.setInterval(myFunction, 1);
+  </script>
+</head>
+<body>
+	<div class="navigation">
+		<img src="assets/images/logo-circle.svg">
+		<ul class="nav">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="notes.html">Notes</a>
+			</li>
+		</ul>
+	</div>
+	<img class="avatar" src="assets/images/avatar.png">
+	<div class="about container">
+		<h1>Hello there</h1>
+		<h4>My name is Geoff and I'm a product designer & developer currently based in Chicago.</h4>
+		<hr>
+		<h2>Stuff to know about me</h2>
+		<ul class="list">
+			<li>
+				<h4>I'm <span id="year"></span><span id="subYear"></span> years old</h4>
+			</li>
+			<li>
+				<h4>I spend my days working at <a class="link" href="http://highground.com">Highground</a></h4>
+			</li>
+			<li>
+				<h4>I share my photography on <a class="link" href="http://instagram.com/geoffbalasi">Instagram</a></h4>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+

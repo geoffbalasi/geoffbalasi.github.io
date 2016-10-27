@@ -1,0 +1,68 @@
+@import 'color';
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+body {
+	color: $mine-shaft;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: $regular;
+	letter-spacing: .5px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba( $primary-color, .2 );
+}
+::-moz-selection {
+  background: rgba( $primary-color, .2 );
+}
+
+h1,
+h2,
+h3,
+h4{
+	display: block;
+	font-weight: $regular;
+	margin: 0 0 .4em;
+}
+
+
+h1 {
+	font-size: 2.2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.5em;
+	cursor: default;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: $light;
+	line-height: 1.5em;
+}
+
+p {
+	font-size: 1.15em;
+	line-height: 1.75em;
+	&.subtle {
+		font-size: .95em;
+		line-height: 1.1em;
+		color: $gray;
+	}
+}
+
+a {
+	color: $primary-color;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
