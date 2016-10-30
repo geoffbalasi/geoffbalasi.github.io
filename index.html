@@ -6,53 +6,62 @@
   <title>Geoff Balasi</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300" rel="stylesheet">
   <script>
-	function myFunction() {
-		var age, oneDay, birth, today, year, subYear, decimal;
-		oneDay = 24*60*60*1000;
-		birth = new Date(1990,01,15);
-		today = new Date();
-		age = (Math.abs((birth.getTime() - today.getTime())/(oneDay)))/365;
-	    document.getElementById("year").innerHTML = Math.floor(age);
-	    decimal = age - Math.floor(age);
-	    decimal = decimal.toString();
-	    decimal = decimal.replace(/^0+/, '');
-	    decimal = decimal.substring(0,11);
-	    document.getElementById("subYear").innerHTML = decimal;
-	}
-	window.setInterval(myFunction, 1);
   </script>
 </head>
 <body>
-	<div class="navigation">
-		<img src="assets/images/logo-circle.svg">
-		<ul class="nav">
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="notes.html">Notes</a>
-			</li>
-		</ul>
-	</div>
-	<img class="avatar" src="assets/images/avatar.png">
-	<div class="about container">
-		<h1>Hello there</h1>
-		<h4>My name is Geoff and I'm a product designer & developer currently based in Chicago.</h4>
+	<div class="body-container">
+		<div class="header">
+			<h1> Geoff Balasi </h1>
+			<div> 
+				<a class="link" target="_" href="http://instagram.com/geoffbalasi">Instagram</a>
+				<span></span>
+				<a class="link" href="mailto:geoffbalasi@gmail.com">Mail</a> 
+				<span></span>
+				<a class="link" href="tel:+18158143826">(815) 814 3862</a> 
+			</div>
+		</div>
+		<h3> Skills </h3>
 		<hr>
-		<h2>Stuff to know about me</h2>
-		<ul class="list">
-			<li>
-				<h4>I'm <span id="year"></span><span id="subYear"></span> years old</h4>
-			</li>
-			<li>
-				<h4>I spend my days working at <a class="link" href="http://highground.com">Highground</a></h4>
-			</li>
-			<li>
-				<h4>I share my photography on <a class="link" href="http://instagram.com/geoffbalasi">Instagram</a></h4>
-			</li>
-		</ul>
+			<h4>UI & Graphics</h4>
+				<p>I love pixels! From creating styleguides to obsessing over color, typography, and animations. I can't get enough of it.</p>
+			<h4>Interaction & UX</h4>
+				<p>I'm experienced with every step of the process. Starting with flows and wireframes to rich static designs and interactive prototypes.</p>
+			<h4>Prototype & Development</h4>
+				<p>Building prototypes with Marvel, Invision & Origami. As well as front end development and styling with HTML, CSS and javascript.</p>
+			<h4>Research & Analysis</h4>
+				<p>I want to do more A/B Testing and User interviews. This is an area I want to develop.</p>
+		<h3> Experience </h3>
+		<hr>
+			<h4><a class="link" href="http://highground.com">Highground</a></h4>
+				<p> details about this job experience </p>
+			<h4><a class="link" href="https://www.channeliq.com/">Channel IQ</a></h4>
+				<p> details about this job experience </p>
+			<h4><a class="link" href="http://www.geneca.com/">Geneca</a></h4>
+				<p> details about this job experience </p>
+		<h3> References </h3>
+		<hr>
+			<h4> John Zimmerman </h4>
+				<p>Product Manager at Highground - <a class="link" href="tel:+13125323981">(312) 532 3981</a></p>
+				 
+			<h4> Hunter Lane </h4>
+				<p>Direct of Product at Tempus - <a class="link" href="tel:+15159754424">(515) 975 4424</a> </p>
+		<hr>
+		<h2 class="title">Tock Concept</h2>
+		<div class="image-container"> 
+			<img class="avatar" src="assets/images/lowrez.png">
+			<img class="avatar" src="assets/images/greyscale.png">
+			<img class="avatar" src="assets/images/detail.png">
+		</div>	
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/4Wa-xCces1w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<h3> Thanks so much! </h3>
+		<p> I really appriciate you taking a look through my resume. If you'd like to chat more, please don't hesitate to reach out. I look forward to hearing from you.</p>
+		<p> - G </p>
 	</div>
+
 </body>
 </html>
 

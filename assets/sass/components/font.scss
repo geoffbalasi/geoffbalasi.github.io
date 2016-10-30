@@ -45,24 +45,18 @@ h3 {
 
 h4 {
 	font-size: 1.2em;
-	font-weight: $light;
-	line-height: 1.5em;
 }
 
 p {
-	font-size: 1.15em;
-	line-height: 1.75em;
-	&.subtle {
-		font-size: .95em;
-		line-height: 1.1em;
-		color: $gray;
-	}
+	color: $gray;
+	line-height: 1.4em;
+	margin: 0 0 1.5em;
 }
 
 a {
 	color: $primary-color;
 	text-decoration: none;
 	&:hover {
-		text-decoration: underline;
+		color: darken($primary-color, 10%);
 	}
 }

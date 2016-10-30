@@ -4,337 +4,78 @@
 @import 'components/color';
 
 
-/* univeral utilites */
+.body-container {
+ 	width: 90%;
+ 	max-width: 800px;
+ 	margin: auto;
+ 	margin-bottom: 50px;
+ 	h3 {
+ 		margin-top: 50px;
+ 	}
 
-.right {
-	float: right;
 }
 
-.left {
-	float: left;
-}
-
-a {
-	color: $mine-shaft;
-	&:hover {
-		color: $mine-shaft;
-		cursor: pointer;
-		text-decoration: none;
+.header {
+	h1 {
+		text-align: center;
+		font-family: 'Josefin Slab', serif;
+		font-size: 4em;
+		margin: .5em .4em .4em;
+	}
+	div {
+		width: 301px;
+		margin: auto;
 	}
 }
 
-ul.list {
-	list-style-type: circle;
-	
-	li {
-
-	}
+span {
+	    width: 2px;
+	    height: 12px;
+	    background-color: #ccc;
+	    border-radius: 13px;
+	    display: inline-block;
+	    margin: 0 12px;
 }
-
-ul.nav {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    li {
-    	display: inline;
-    	margin: 0 5px 0 0;
-    	a {
-		    color: $white;
-		    border-bottom: 3px solid $primary-color;
-		    margin: 1em;
-		    padding-bottom: 3px;
-		    transition: border-color .4s ease-out;
-		    -webkit-transition: border-color .4s ease-out;
-		    &:hover {
-		    	border-color: white;
-		    }
-    	}
-    }
-}
-
-
-a.button {
-	background-color: $primary-color;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    display: inline-block;
-    outline: none;
-    padding: 11px 20px 10px;
-    &:hover {
-    	background-color: darken( $primary-color, 5% );
-    }
-    &.secondary {
-    	background-color: $secondary-color;
-    	&:hover {
-    		background-color: darken( $secondary-color, 5% );
-    	}
-    }
-}
-
-a.link {
-	border-bottom: 4px solid lighten( $primary-color, 33% );
-	&:hover {
-		color: darken( $primary-color, 20% );
-	}
-}
-
 
 hr {
 	display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid $alto;
-    margin: 1em 0;
-    padding: 0; 
+    border-top: 1px solid #ddd;
+    margin: 0 0 1em;
+    padding: 0;
 }
 
-.header {
-	background-color: $primary-color;
-	border: 1px solid $primary-color;
-	padding: 50px 20px;
-	h1 {
-		color: $white;
-		margin: 0;
-		text-align: center;
-		font-weight: $light;
-	}
-	a {
-		color: $white;
-	}
-	ul.nav {
-		margin: 25px 0 5px;
-	}
+.title {
+	text-align: center;
+	margin: 100px auto 40px;
+	width: 210px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid $primary-color;
 }
 
-.container {
-	border: 1px solid $alto;
-	border-radius: $radius;
-	margin: 40px auto;
-	max-width: 800px;
-	padding: 20px;
-	position: relative;
-	width: 85%;
-	ul.nav {
-		a {
-		    color: $primary-color;
-		    border-bottom: 3px solid $white;
-		    &:hover {
-		    	border-color: $primary-color;
-		    }
-    	}
-	}
-}
-
-.navigation {
-	padding: 25px 15px;
+.image-container {
 	img {
-		float: left;
-		height: 50px;
-    	margin: 0 15px;
-	}
-	ul.nav {
-		text-align: left;
-		li {
-			margin: 5px;
-			padding: 5px;
-			a {
-				border-color: $white;
-				color: $mine-shaft;
-				margin: 0.3em;
-				&:hover {
-					border-color: $primary-color;
-					color: $primary-color;
-					cursor: pointer;
-				}
-			}
-		}
+		width: 100%;	
 	}
 }
 
-/* Homepage */
-
-.avatar {
-	margin: auto;
-    width: 300px;
-    display: block;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
 }
-
-.about {	
-	&.container {
-		h1,
-		h2 {
-			color: $primary-color;
-		}
-	}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
+	
 
-/* Notes */
 
-.notes {
-	&.container {
-		padding: 0;
-		img {
-			width: 100%;
-		}
-		a {
-			display: block;
-    		margin: 20px;
-		}
-		&:hover {
-			border: 1px solid $primary-color;
-			cursor: default;
-		}
-	}
-}
-
-/* Article */
-
-.hero {
-	img {
-		width: 100%;
-	}	
-	h1 {
-	    color: white;
-	    font-weight: 700;
-	    font-size: 1.3em;
-	    margin-top: -27%;
-	    margin-bottom: 18%;
-	    text-align: center;
-	    padding: 0 .2em;
-	}
-	h4 {
-		color: white;
-	    font-weight: 400;
-	    font-size: .8em;
-	    margin-top: -16%;
-	    margin-bottom: 15%;
-	    text-align: center;
-	    padding: 0 .2em;
-	}
-	@media #{$small} {
-       h1 {
-       		font-size: 2em;
-       }
-       h4 {
-       		font-size: 1em;
-       }
-	}
-	@media #{$medium} {
-       h1 {
-       		font-size: 3em;
-       }
-       h4 {
-       		font-size: 1.5em;
-       }
-	}
-	@media #{$large} {
-       h1 {
-       		font-size: 4em;
-       }
-       h4 {
-       		font-size: 2em;
-       }
-	}
-	@media #{$xlarge} {
-       h1 {
-       		font-size: 5em;
-       }
-       h4 {
-       		font-size: 2.7em;
-       }
-	}
-}
-
-.article {
-	&.container {
-		border: none;
-		hr {
-			margin: 3em;
-		}
-		h2 {
-       		margin-top: 1em;
-       		color: $primary-color;
-        }
-		img {
-			width: 100%;
-		}
-	}
-}
-
-/* Style Guide */
-
-.style.container {
-	h2:first-child {
-		color: $silver-chalice;
-		font-weight: $light;
-	}
-}
-
-.color-container {
-		div {
-			height: 2em;
-			border-radius: $radius;
-			cursor: pointer;
-		}
-		div#primary {
-			background-color: $primary-color;
-			&:hover {
-				background-color: darken( $primary-color, 5% );
-			}
-		}
-		div#secondary {
-			background-color: $secondary-color;
-			&:hover {
-				background-color: darken( $secondary-color, 5% );
-			}
-		}
-		div#mine-shaft {
-			background-color: $mine-shaft;
-			&:hover {
-				background-color: darken( $mine-shaft, 5% );
-			}
-		}
-		div#tundora {
-			background-color: $tundora;
-			&:hover {
-				background-color: darken( $tundora, 5% );
-			}
-		}
-		div#dove-gray {
-			background-color: $dove-gray;
-			&:hover {
-				background-color: darken( $dove-gray, 5% );
-			}
-		}
-		div#gray {
-			background-color: $gray;
-			&:hover {
-				background-color: darken( $gray, 5% );
-			}
-		}
-		div#silver-chalice {
-			background-color: $silver-chalice;
-			&:hover {
-				background-color: darken( $silver-chalice, 5% );
-			}
-		}
-		div#silver {
-			background-color: $silver;
-			&:hover {
-				background-color: darken( $silver, 5% );
-			}
-		}
-		div#alto {
-			background-color: $alto;
-			&:hover {
-				background-color: darken( $alto, 5% );
-			}
-		}
-		div#white {
-			background-color: $white;
-			border: 1px solid $gray;
-		}
-	}
-  
 
