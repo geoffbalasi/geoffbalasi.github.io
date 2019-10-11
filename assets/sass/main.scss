@@ -16,6 +16,12 @@ body {
 	align-items: center;
 	margin: 80px;
 	text-align: center;
+
+	h1 {
+		border-bottom: 1px solid $chalic;
+		margin-bottom: 10px;
+    padding-bottom: 10px;
+	}
 }
 
 .challenge-container {
