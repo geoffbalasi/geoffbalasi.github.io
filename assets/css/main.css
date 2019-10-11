@@ -3,7 +3,6 @@
 /* Medium screens */
 /* Large screens */
 /* Large screens */
-/* Settings */
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -407,35 +406,44 @@ template {
 [hidden] {
   display: none; }
 
-/* greyscale */
-/* site colors */
+/* week colors */
+.salmon {
+  background-color: #F79F79; }
+
+.peach {
+  background-color: #F7D08A; }
+
+.key-lime {
+  background-color: #E3F09B; }
+
+.pewter {
+  background-color: #87B6A7; }
+
+.chalic {
+  background-color: #AAABBC; }
+
 body {
-  color: #222;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Big Shoulders Text', cursive;
+  font-weight: 500;
   letter-spacing: .5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-::selection {
-  background: rgba(25, 186, 127, 0.2); }
-
-::-moz-selection {
-  background: rgba(25, 186, 127, 0.2); }
 
 h1,
 h2,
 h3,
 h4 {
   display: block;
-  font-weight: 400;
-  margin: 0 0 .4em; }
+  font-weight: 500;
+  margin: 0 0 8px; }
 
 h1 {
-  font-size: 2.2em; }
+  font-size: 4.2em;
+  font-weight: 500; }
 
 h2 {
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  font-weight: 900; }
 
 h3 {
   font-size: 1.5em;
@@ -445,78 +453,89 @@ h4 {
   font-size: 1.2em; }
 
 p {
-  color: #888;
   line-height: 1.4em;
   margin: 0 0 1.5em; }
 
-a {
-  color: #19BA7F;
-  text-decoration: none; }
-  a:hover {
-    color: #138d60; }
+/* week colors */
+.salmon {
+  background-color: #F79F79; }
 
-/* greyscale */
-/* site colors */
-.body-container {
-  width: 90%;
-  max-width: 800px;
+.peach {
+  background-color: #F7D08A; }
+
+.key-lime {
+  background-color: #E3F09B; }
+
+.pewter {
+  background-color: #87B6A7; }
+
+.chalic {
+  background-color: #AAABBC; }
+
+body {
   margin: auto;
-  margin-bottom: 50px; }
-  .body-container h3 {
-    margin-top: 50px; }
-
-.header h1 {
-  text-align: center;
-  font-family: 'Josefin Slab', serif;
-  font-size: 4em;
-  margin: .65em .4em .4em; }
-.header div {
-  width: 278px;
-  margin: auto; }
-
-span {
-  width: 2px;
-  height: 12px;
-  background-color: #ccc;
-  border-radius: 13px;
-  display: inline-block;
-  margin: 0 12px; }
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ddd;
-  margin: 0 0 1em;
-  padding: 0; }
-
-.cover {
-  color: #444; }
+  max-width: 900px; }
 
 .title {
-  text-align: center;
-  margin: 100px auto 40px;
-  width: 210px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #19BA7F; }
+  color: #87B6A7;
+  display: flex;
+  flex: 1 0 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px;
+  text-align: center; }
 
-.image-container img {
-  width: 100%; }
+.challenge-container {
+  border-radius: 24px;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  margin: 80px;
+  padding: 20px; }
 
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden; }
+.challenge-top {
+  align-items: center;
+  display: flex;
+  flex: 1 0 100%;
+  justify-content: space-between; }
 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
+.challenge-date {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 5px 8px; }
 
-/*# sourceMappingURL=main.css.map */
+.challenge-days {
+  display: flex;
+  padding: 12px 6px; }
+
+.challenge-day {
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  font-weight: 900;
+  flex: 1;
+  min-height: 30px;
+  margin-right: 24px; }
+  .challenge-day:last-child {
+    margin-right: 0; }
+
+@media only screen and (max-width: 600px) {
+  .title {
+    margin: 30px; }
+  .challenge-container {
+    margin: 30px; }
+  .challenge-top {
+    flex-direction: column;
+    text-align: center; }
+  .challenge-subtitle {
+    text-align: center; }
+  .challenge-days {
+    flex-direction: column; }
+  .challenge-day {
+    min-height: 40px;
+    margin-bottom: 24px;
+    margin-right: 0; }
+    .challenge-day:last-child {
+      margin-bottom: 0; } }

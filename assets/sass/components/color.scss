@@ -1,13 +1,27 @@
-/* greyscale */
-$mine-shaft: #222;
-$tundora: #444;
-$dove-gray: #666;
-$gray: #888;
-$silver-chalice: #AAA;
-$silver: #CCC;
-$alto: #DDD;
-$white: #ffffff;
+/* week colors */
+$salmon: #F79F79;
+$peach: #F7D08A;
+$key-lime: #E3F09B;
+$pewter: #87B6A7;
+$chalic: #AAABBC;
 
-/* site colors */
-$primary-color: #19BA7F;
+.salmon {
+  background-color: $salmon;
+}
+
+.peach {
+  background-color: $peach;
+}
+
+.key-lime {
+  background-color: $key-lime;
+}
+
+.pewter {
+  background-color: $pewter;
+}
+
+.chalic {
+  background-color: $chalic;
+}
 

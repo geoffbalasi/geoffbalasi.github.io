@@ -3,83 +3,107 @@
 @import 'components/font';
 @import 'components/color';
 
-
-.body-container {
- 	width: 90%;
- 	max-width: 800px;
- 	margin: auto;
- 	margin-bottom: 50px;
- 	h3 {
- 		margin-top: 50px;
- 	}
-
-}
-
-.header {
-	h1 {
-		text-align: center;
-		font-family: 'Josefin Slab', serif;
-		font-size: 4em;
-		margin: .65em .4em .4em;
-	}
-	div {
-		width: 278px;
-		margin: auto;
-	}
-}
-
-span {
-	    width: 2px;
-	    height: 12px;
-	    background-color: #ccc;
-	    border-radius: 13px;
-	    display: inline-block;
-	    margin: 0 12px;
-}
-
-hr {
-	display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ddd;
-    margin: 0 0 1em;
-    padding: 0;
-}
-
-.cover {
-	color: $tundora;
+body {
+	margin: auto;
+	max-width: 900px;
 }
 
 .title {
+	color: $pewter;
+	display: flex;
+	flex: 1 0 100%;
+	flex-direction: column;
+	align-items: center;
+	margin: 80px;
 	text-align: center;
-	margin: 100px auto 40px;
-	width: 210px;
-	padding-bottom: 8px;
-	border-bottom: 1px solid $primary-color;
 }
 
-.image-container {
-	img {
-		width: 100%;	
+.challenge-container {
+	border-radius: 24px;
+	box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+	color: white;
+	margin: 80px;
+	padding: 20px;
+}
+
+.challenge-top {
+	align-items: center;
+	display: flex;
+	flex: 1 0 100%;
+	justify-content: space-between;
+}
+
+.challenge-title {
+}
+
+.challenge-date {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	padding: 5px 8px;
+}
+
+.challenge-subtitle {
+}
+
+.challenge-days {
+	display: flex;
+	padding: 12px 6px;
+}
+
+.challenge-day {
+	align-items: center;
+  justify-content: center;
+	border-radius: 30px;
+	box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	font-weight: $bold;
+	flex: 1;
+	min-height: 30px;
+	margin-right: 24px;
+
+	&:last-child {
+		margin-right: 0;
 	}
 }
 
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
+@media only screen and (max-width: 600px) {
+	.title {
+		margin: 30px;
+	}
+
+	.challenge-container {
+		margin: 30px;
+	}
+
+	.challenge-top {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.challenge-subtitle {
+		text-align: center;
+	}
+
+  .challenge-days {
+		flex-direction: column;
+	}
+
+	.challenge-day {
+		min-height: 40px;
+		margin-bottom: 24px;
+		margin-right: 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
- 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+
+.challenge-summary {
+
 }
-	
 
+.challenge-container--future {
 
-
+}

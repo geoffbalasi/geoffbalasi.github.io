@@ -1,32 +1,41 @@
-/* greyscale */
-/* site colors */
+/* week colors */
+.salmon {
+  background-color: #F79F79; }
+
+.peach {
+  background-color: #F7D08A; }
+
+.key-lime {
+  background-color: #E3F09B; }
+
+.pewter {
+  background-color: #87B6A7; }
+
+.chalic {
+  background-color: #AAABBC; }
+
 body {
-  color: #222;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Big Shoulders Text', cursive;
+  font-weight: 500;
   letter-spacing: .5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-::selection {
-  background: rgba(25, 186, 127, 0.2); }
-
-::-moz-selection {
-  background: rgba(25, 186, 127, 0.2); }
 
 h1,
 h2,
 h3,
 h4 {
   display: block;
-  font-weight: 400;
-  margin: 0 0 .4em; }
+  font-weight: 500;
+  margin: 0 0 8px; }
 
 h1 {
-  font-size: 2.2em; }
+  font-size: 4.2em;
+  font-weight: 500; }
 
 h2 {
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  font-weight: 900; }
 
 h3 {
   font-size: 1.5em;
@@ -36,14 +45,5 @@ h4 {
   font-size: 1.2em; }
 
 p {
-  color: #888;
   line-height: 1.4em;
   margin: 0 0 1.5em; }
-
-a {
-  color: #19BA7F;
-  text-decoration: none; }
-  a:hover {
-    color: #138d60; }
-
-/*# sourceMappingURL=font.css.map */
