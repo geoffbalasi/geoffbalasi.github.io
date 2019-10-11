@@ -503,9 +503,13 @@ body {
   border-radius: 6px;
   padding: 5px 8px; }
 
+.challenge-date-next {
+  background-color: white;
+  color: #222; }
+
 .challenge-days {
   display: flex;
-  padding: 12px 6px; }
+  padding: 16px 6px 4px; }
 
 .challenge-day {
   align-items: center;
